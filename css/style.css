@@ -6,4 +6,16 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+/*-----------------
+DEBUG
+---------------*/
+.debug .header-top{
+    background-color: #daa520;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
 
