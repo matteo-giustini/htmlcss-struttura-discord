@@ -10,12 +10,107 @@ RESET
 DEBUG
 ---------------*/
 .debug .header-top{
+    background-color: #add8e6;
+}
+.debug .header-top > .container{
     background-color: #daa520;
 }
+.debug .container > * {
+    border: 1px dashed black;
+}
+.debug .header-bottom{
+    background-color: #00008b;
+}
+.hero{
+    background-color: #ee82ee;
+    min-height: 400px;
+    border: black solid 1px dashed;
+
+}
+.debug section .container{
+    min-height: 400px;
+
+}
+.debug .col-big{
+    background-color: #1e90ff;
+}
+.debug .col-small{
+    background-color: #ffc0cb;
+}
+.debug section:last-child > .container{
+    background-color: #228b22;
+    border: black solid 1px dashed;
+    
+
+}
+
+
+/*-------------
+COMMON
+--------------*/
 .container{
     max-width: 1200px;
     margin: auto;
     display: flex;
 }
+/*-----------------
+header
+------------------*/
+.header-top {
+    padding: 16px 0px;
+    justify-content: center;
+}
+.header-top .logo{
+    text-align: left;
+}
+.header-top .main-nav{
+    text-align: center;
+    flex-grow: 1;
 
+}
+.header-top .log-in{
+    text-align: right;
+}
+.header-top .logo, .header-top .log-in{
+    width: 20%;
+}
+.header-top > .container > *{
+    padding: 6px;
+}
+.main-nav ul{ 
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: inherit;
+}
+.hero{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+/*-------------
+    MAIN
+---------------*/
+}
+.container > .col-big{
+    width: 60%;
+}
+.container > .col-small{
+    width: 40%;
+}
+section .container{
+    display: flex;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section:nth-child(2n){
+    background-color: #d3d3d3;
+}
 
+ 
